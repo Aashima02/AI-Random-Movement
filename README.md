@@ -60,36 +60,35 @@ the desired AI controller class (e.g., AIController).
 
 #### STEP 7: Set the AI controller and behavior tree:
 
-● Open the AIController Blueprint.
+* Open the AIController Blueprint.
 
-● In the Blueprint editor, locate the Event Begin Play event.
+* In the Blueprint editor, locate the Event Begin Play event.
 
-● Drag off the execution line and search for "Possess".
+* Drag off the execution line and search for "Possess".
 
-● In the Possess node, select the AICharacter Blueprint you created.
+* In the Possess node, select the AICharacter Blueprint you created.
 
-● Drag off the AICharacter reference and search for "Use Blackboard".
+* Drag off the AICharacter reference and search for "Use Blackboard".
 
-● Connect the output of the Use Blackboard node to the AIController's Blackboard
+* Connect the output of the Use Blackboard node to the AIController's Blackboard
 property.
 
-● In the Blackboard property, select the AIBlackboard asset you created.
+* In the Blackboard property, select the AIBlackboard asset you created.
 
-● Drag off the AICharacter reference again and search for "Run Behavior Tree".
+* Drag off the AICharacter reference again and search for "Run Behavior Tree".
 
-● Connect the output of the Run Behavior Tree node to the AIController's Behavior
+* Connect the output of the Run Behavior Tree node to the AIController's Behavior
 Tree property.
 
-● In the Behavior Tree property, select the AIBehaviorTree asset you created.
-
-● Save the AIController Blueprint.
+* In the Behavior Tree property, select the AIBehaviorTree asset you created.
+* Save the AIController Blueprint.
 
 #### STEP 8: Set up the NavMesh and boundaries:
 
-● Place a NavMeshBoundsVolume in your level to define the AI character's
+* Place a NavMeshBoundsVolume in your level to define the AI character's
 movement boundaries.
 
-● Adjust the size and position of the NavMeshBoundsVolume to cover the desired
+* Adjust the size and position of the NavMeshBoundsVolume to cover the desired
 playable area
 
 ## OUTPUT:
